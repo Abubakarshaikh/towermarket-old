@@ -18,6 +18,7 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
   Future<void> _onProductLoad(
       ProductLoad event, Emitter<ProductState> emit) async {
     try {
+      emit(const ProductState(status: ProductStatus.loading));
       final List<Product> fromRepo = await _productRepository.getAllProducts();
       emit(ProductState(products: fromRepo, status: ProductStatus.success));
     } catch (e) {

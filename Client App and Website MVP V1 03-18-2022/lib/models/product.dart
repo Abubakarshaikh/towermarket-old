@@ -3,12 +3,14 @@ import 'dart:convert';
 import 'package:equatable/equatable.dart';
 
 class Product extends Equatable {
+  final String categoryId;
   final String title;
   final String unit;
   final int quantity;
   final int price;
   final String image;
   const Product({
+    required this.categoryId,
     required this.title,
     required this.unit,
     required this.quantity,
@@ -17,6 +19,7 @@ class Product extends Equatable {
   });
 
   Product copyWith({
+    String? categoryId,
     String? title,
     String? unit,
     int? quantity,
@@ -24,6 +27,7 @@ class Product extends Equatable {
     String? image,
   }) {
     return Product(
+      categoryId: categoryId ?? this.categoryId,
       title: title ?? this.title,
       unit: unit ?? this.unit,
       quantity: quantity ?? this.quantity,
@@ -34,6 +38,7 @@ class Product extends Equatable {
 
   Map<String, dynamic> toMap() {
     return {
+      'categoryId': categoryId,
       'title': title,
       'unit': unit,
       'quantity': quantity,
@@ -44,6 +49,7 @@ class Product extends Equatable {
 
   factory Product.fromMap(Map<String, dynamic> map) {
     return Product(
+      categoryId: map['categoryId'] ?? '',
       title: map['title'] ?? '',
       unit: map['unit'] ?? '',
       quantity: map['quantity']?.toInt() ?? 0,
@@ -59,12 +65,13 @@ class Product extends Equatable {
 
   @override
   String toString() {
-    return 'Product(title: $title, unit: $unit, quantity: $quantity, price: $price, image: $image)';
+    return 'Product(categoryId: $categoryId, title: $title, unit: $unit, quantity: $quantity, price: $price, image: $image)';
   }
 
   @override
   List<Object> get props {
     return [
+      categoryId,
       title,
       unit,
       quantity,

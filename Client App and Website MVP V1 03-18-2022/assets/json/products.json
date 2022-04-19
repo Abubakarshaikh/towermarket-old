@@ -1,16 +1,58 @@
 [
     {
+        "categoryId": "1",
         "title": "Bisleri Limonata Limey Minty Cooler Soft Drink",
         "unit": "ml",
         "quantity": 600,
         "price": 31,
-        "image": "assets/images/bisleri_limonata.png"
+        "image": "assets/images/products/bisleri_limonata.png"
     },
     {
+        "categoryId": "1",
         "title": "Bisleri Limonata Limey Minty Cooler Soft Drink",
         "unit": "ml",
         "quantity": 600,
         "price": 31,
-        "image": "assets/images/bisleri_limonata.png"
+        "image": "assets/images/products/bisleri_limonata.png"
+    },
+    {
+        "categoryId": "1",
+        "title": "Bisleri Limonata Limey Minty Cooler Soft Drink",
+        "unit": "ml",
+        "quantity": 600,
+        "price": 31,
+        "image": "assets/images/products/bisleri_limonata.png"
+    },
+    {
+        "categoryId": "1",
+        "title": "Bisleri Limonata Limey Minty Cooler Soft Drink",
+        "unit": "ml",
+        "quantity": 600,
+        "price": 31,
+        "image": "assets/images/products/bisleri_limonata.png"
+    },
+    {
+        "categoryId": "1",
+        "title": "Bisleri Limonata Limey Minty Cooler Soft Drink",
+        "unit": "ml",
+        "quantity": 600,
+        "price": 31,
+        "image": "assets/images/products/bisleri_limonata.png"
+    },
+    {
+        "categoryId": "1",
+        "title": "Bisleri Limonata Limey Minty Cooler Soft Drink",
+        "unit": "ml",
+        "quantity": 600,
+        "price": 31,
+        "image": "assets/images/products/bisleri_limonata.png"
+    },
+    {
+        "categoryId": "1",
+        "title": "Bisleri Limonata Limey Minty Cooler Soft Drink",
+        "unit": "ml",
+        "quantity": 600,
+        "price": 31,
+        "image": "assets/images/products/bisleri_limonata.png"
     }
 ]
