@@ -22,6 +22,7 @@ class TowerMarketTextStyle {
       fontSize: 12,
       height: 1.4,
       fontWeight: TowerMarketFontWeight.regular,
+      color: TowerMarketColors.grey,
     );
   }
 

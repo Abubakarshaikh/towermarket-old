@@ -8,4 +8,5 @@ abstract class TowerMarketColors {
   static const green = Color(0xFF008000);
   static const lightyellow = Color(0xFFfff6c1);
   static const lightgrey = Color(0xFFf7f7f7);
+  static const transparent = Colors.transparent;
 }
