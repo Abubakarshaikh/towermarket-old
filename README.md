@@ -2,9 +2,8 @@
 
 ## 7 - Social App Photographers
 Flutter UI + Clippers + Animations
- | Home Page | Profile Page |
- | --------- |--------------|
- | <img src="https://media.giphy.com/media/732BDQrWgdejCZhfaj/giphy.gif" width="500" >
+ | Blinkit Clone 
+ | <img src="https://media.giphy.com/media/732BDQrWgdejCZhfaj/giphy.gif">
 
 A new Flutter project.
 
