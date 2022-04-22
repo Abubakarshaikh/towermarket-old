@@ -1,6 +1,10 @@
 # towermarket
 
-(https://github.com/Abubakarshaikh/towermarket/blob/main/Samples/Blinkit%20Product%20Page.mp4)
+## 7 - Social App Photographers
+Flutter UI + Clippers + Animations
+ | Home Page | Profile Page |
+ | --------- |--------------|
+ | <img src="https://media1.giphy.com/media/9lPSh9Kmkx06njdmt6/giphy.gif" width="250" > | <img src="https://media4.giphy.com/media/QVjFJABT8dfXWgfv8G/giphy.webp" width="250">|
 
 A new Flutter project.
 
