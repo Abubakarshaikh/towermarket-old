@@ -9,5 +9,5 @@ class CategoryState extends Equatable {
       {this.categories = const [], this.status = CategoryStatus.initial});
 
   @override
-  List<Object?> get props => [];
+  List<Object?> get props => [status, categories];
 }

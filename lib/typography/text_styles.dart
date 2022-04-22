@@ -3,6 +3,35 @@ import '../colors/colors.dart';
 import 'font_weights.dart';
 
 class TowerMarketTextStyle {
+  static TextStyle get title1 {
+    return _baseTextStyle.copyWith(
+      fontSize: 16,
+      fontWeight: TowerMarketFontWeight.regular,
+    );
+  }
+
+  static TextStyle get title2 {
+    return _baseTextStyle.copyWith(
+      fontSize: 14.5,
+      fontWeight: TowerMarketFontWeight.regular,
+    );
+  }
+
+  static TextStyle get title3 {
+    return _baseTextStyle.copyWith(
+      fontSize: 12,
+      height: 1.4,
+      fontWeight: TowerMarketFontWeight.regular,
+    );
+  }
+
+  static TextStyle get title4 {
+    return _baseTextStyle.copyWith(
+      fontSize: 10,
+      fontWeight: TowerMarketFontWeight.regular,
+    );
+  }
+
   static TextStyle get headline1 {
     return _baseTextStyle.copyWith(
       fontSize: 74,

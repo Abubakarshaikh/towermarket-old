@@ -10,6 +10,7 @@ class CategoryBloc extends Bloc<CategoryEvent, CategoryState> {
   final CategoryRepository _categoryRepository;
   CategoryBloc(this._categoryRepository) : super(const CategoryState()) {
     on<CategoryLoad>(_onCategoryLoad);
+    on<CategorySelect>(_onCategorySelect);
   }
 
   Future<void> _onCategoryLoad(
@@ -20,5 +21,18 @@ class CategoryBloc extends Bloc<CategoryEvent, CategoryState> {
     } catch (e) {
       emit(const CategoryState(status: CategoryStatus.failure));
     }
+  }
+
+  void _onCategorySelect(CategorySelect event, Emitter<CategoryState> emit) {
+    final state = this.state;
+
+    final updatedState = state.categories.map((category) {
+      return category == event.category
+          ? event.category.copyWith(isSelected: true)
+          : category.copyWith(isSelected: false);
+    }).toList();
+
+    emit(CategoryState(
+        categories: updatedState, status: CategoryStatus.success));
   }
 }

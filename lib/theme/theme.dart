@@ -11,6 +11,10 @@ class TowermarketTheme {
 
   static AppBarTheme get _appBarTheme {
     return const AppBarTheme(
+      iconTheme: IconThemeData(
+        color: TowerMarketColors.black,
+        size: 32.0,
+      ),
       backgroundColor: TowerMarketColors.white,
     );
   }

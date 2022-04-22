@@ -6,21 +6,25 @@ class Category extends Equatable {
   final String id;
   final String title;
   final String image;
+  final bool isSelected;
   const Category({
     required this.id,
     required this.title,
     required this.image,
+    this.isSelected = false,
   });
 
   Category copyWith({
     String? id,
     String? title,
     String? image,
+    bool? isSelected,
   }) {
     return Category(
       id: id ?? this.id,
       title: title ?? this.title,
       image: image ?? this.image,
+      isSelected: isSelected ?? this.isSelected,
     );
   }
 
@@ -46,8 +50,10 @@ class Category extends Equatable {
       Category.fromMap(json.decode(source));
 
   @override
-  String toString() => 'Category(id: $id, title: $title, image: $image)';
+  String toString() {
+    return 'Category(id: $id, title: $title, image: $image, isSelected: $isSelected)';
+  }
 
   @override
-  List<Object> get props => [id, title, image];
+  List<Object> get props => [id, title, image, isSelected];
 }

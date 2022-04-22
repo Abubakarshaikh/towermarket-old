@@ -30,15 +30,9 @@ class CategoriesList extends StatelessWidget {
                     ),
                   ],
                 ),
-                child: GridView.builder(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+                child: ListView.builder(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
                   itemCount: state.categories.length,
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 1,
-                    childAspectRatio: 0.8,
-                    mainAxisSpacing: 12,
-                  ),
                   itemBuilder: (context, index) {
                     return CategoryThumbnail(category: state.categories[index]);
                   },

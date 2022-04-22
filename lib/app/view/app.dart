@@ -22,6 +22,7 @@ class App extends StatelessWidget {
                 CategoryBloc(CategoryRepository())..add(const CategoryLoad())),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         theme: TowermarketTheme.standard,
         home: const ProductPage(),
       ),
