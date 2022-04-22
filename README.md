@@ -4,7 +4,7 @@
 Flutter UI + Clippers + Animations
  | Home Page | Profile Page |
  | --------- |--------------|
- | <img src="https://media1.giphy.com/media/9lPSh9Kmkx06njdmt6/giphy.gif" width="250" > | <img src="https://media4.giphy.com/media/QVjFJABT8dfXWgfv8G/giphy.webp" width="250">|
+ | <img src="https://media.giphy.com/media/732BDQrWgdejCZhfaj/giphy.gif" width="250" > | <img src="https://media4.giphy.com/media/QVjFJABT8dfXWgfv8G/giphy.webp" width="250">|
 
 A new Flutter project.
 
