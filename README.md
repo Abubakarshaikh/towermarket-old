@@ -1,5 +1,5 @@
 Blinkit Clone 
-<img src="https://media.giphy.com/media/732BDQrWgdejCZhfaj/giphy.gif">
+<img src="https://media.giphy.com/media/732BDQrWgdejCZhfaj/giphy.mp4">
 
 A new Flutter project.
 
