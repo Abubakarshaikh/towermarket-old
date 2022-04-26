@@ -6,15 +6,17 @@ class Product extends Equatable {
   final String categoryId;
   final String title;
   final String unit;
-  final int quantity;
+  final int volume;
   final int price;
+  final int quantity;
   final String image;
   const Product({
     required this.categoryId,
     required this.title,
     required this.unit,
-    required this.quantity,
+    required this.volume ,
     required this.price,
+    this.quantity = 0,
     required this.image,
   });
 
@@ -22,16 +24,18 @@ class Product extends Equatable {
     String? categoryId,
     String? title,
     String? unit,
-    int? quantity,
+    int? volume,
     int? price,
+    int? quantity,
     String? image,
   }) {
     return Product(
       categoryId: categoryId ?? this.categoryId,
       title: title ?? this.title,
       unit: unit ?? this.unit,
-      quantity: quantity ?? this.quantity,
+      volume: volume ?? this.volume,
       price: price ?? this.price,
+      quantity: quantity ?? this.quantity,
       image: image ?? this.image,
     );
   }
@@ -41,8 +45,9 @@ class Product extends Equatable {
       'categoryId': categoryId,
       'title': title,
       'unit': unit,
-      'quantity': quantity,
+      'volume': volume,
       'price': price,
+      'quantity': quantity,
       'image': image,
     };
   }
@@ -52,8 +57,9 @@ class Product extends Equatable {
       categoryId: map['categoryId'] ?? '',
       title: map['title'] ?? '',
       unit: map['unit'] ?? '',
-      quantity: map['quantity']?.toInt() ?? 0,
+      volume: map['volume']?.toInt() ?? 0,
       price: map['price']?.toInt() ?? 0,
+      quantity: map['quantity']?.toInt() ?? 0,
       image: map['image'] ?? '',
     );
   }
@@ -65,7 +71,7 @@ class Product extends Equatable {
 
   @override
   String toString() {
-    return 'Product(categoryId: $categoryId, title: $title, unit: $unit, quantity: $quantity, price: $price, image: $image)';
+    return 'Product(categoryId: $categoryId, title: $title, unit: $unit, volume: $volume, price: $price, quantity: $quantity, image: $image)';
   }
 
   @override
@@ -74,8 +80,9 @@ class Product extends Equatable {
       categoryId,
       title,
       unit,
-      quantity,
+      volume,
       price,
+      quantity,
       image,
     ];
   }

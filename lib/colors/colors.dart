@@ -9,4 +9,5 @@ abstract class TowerMarketColors {
   static const lightyellow = Color(0xFFfff6c1);
   static const lightgrey = Color(0xFFf7f7f7);
   static const transparent = Colors.transparent;
+  static const gold = Color(0xFFf7cb46);
 }

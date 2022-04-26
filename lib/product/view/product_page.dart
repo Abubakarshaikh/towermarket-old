@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:towermarket/typography/font_weights.dart';
 import 'package:towermarket/typography/text_styles.dart';
 
+import '../widgets/custom_search_delegate.dart';
 import '../widgets/widgets.dart';
 
 class ProductPage extends StatelessWidget {
@@ -18,9 +19,17 @@ class ProductPage extends StatelessWidget {
             fontWeight: TowerMarketFontWeight.bold,
           ),
         ),
-        actions: const [
-          Icon(Icons.search_sharp),
-          SizedBox(width: 6),
+        actions: [
+          IconButton(
+            onPressed: () {
+              showSearch(
+                context: context,
+                delegate: CustomSearchDelegate(),
+              );
+            },
+            icon: const Icon(Icons.search_sharp),
+          ),
+          const SizedBox(width: 6),
         ],
       ),
       body: Row(
