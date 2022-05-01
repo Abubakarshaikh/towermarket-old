@@ -9,7 +9,8 @@ abstract class ProductEvent extends Equatable {
 }
 
 class ProductLoad extends ProductEvent {
-  const ProductLoad();
+  final String categoryId;
+  const ProductLoad({this.categoryId = "1"});
 }
 
 class Increment extends ProductEvent {

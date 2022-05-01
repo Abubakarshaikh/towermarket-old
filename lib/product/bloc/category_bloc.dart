@@ -1,8 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:towermarket/models/category.dart';
-import 'package:towermarket/repository/category_repository.dart';
-
+import 'package:towermarket_repository/towermarket_repository.dart';
+import 'package:towermarket_api_client/towermarket_api_client.dart';
 part 'category_event.dart';
 part 'category_state.dart';
 

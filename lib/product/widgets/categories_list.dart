@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:towermarket/colors/colors.dart';
+import 'package:towermarket_ui/towermarket_ui.dart';
 
 import '../bloc/category_bloc.dart';
 import 'widgets.dart';
@@ -34,7 +34,7 @@ class CategoriesList extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 12),
                   itemCount: state.categories.length,
                   itemBuilder: (context, index) {
-                    return CategoryThumbnail(category: state.categories[index]);
+                    return CategoryCard(category: state.categories[index]);
                   },
                 ),
               ),

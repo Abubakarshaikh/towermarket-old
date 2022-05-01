@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:towermarket/models/product.dart';
+import 'package:towermarket_api_client/towermarket_api_client.dart';
 
 part 'cart_event.dart';
 part 'cart_state.dart';

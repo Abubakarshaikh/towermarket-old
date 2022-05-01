@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:towermarket_api_client/towermarket_api_client.dart';
 
-import '../../models/product.dart';
 import '../bloc/product_bloc.dart';
 import 'rounded_icon_button.dart';
 

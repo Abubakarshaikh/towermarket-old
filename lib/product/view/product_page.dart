@@ -1,31 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:towermarket/typography/font_weights.dart';
-import 'package:towermarket/typography/text_styles.dart';
+import 'package:towermarket/search/view/search_page.dart';
 
-import '../widgets/custom_search_delegate.dart';
 import '../widgets/widgets.dart';
 
 class ProductPage extends StatelessWidget {
+  static Route<ProductPage> route() {
+    return MaterialPageRoute(builder: (_) => const ProductPage());
+  }
+
   const ProductPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.arrow_back_rounded),
-        title: Text(
-          "Cold drinks & juices",
-          style: TowerMarketTextStyle.title1.copyWith(
-            fontWeight: TowerMarketFontWeight.bold,
-          ),
-        ),
+        title: const Text("Cold drinks & juices"),
         actions: [
           IconButton(
             onPressed: () {
-              showSearch(
-                context: context,
-                delegate: CustomSearchDelegate(),
-              );
+              Navigator.of(context).push(SearchPage.route());
             },
             icon: const Icon(Icons.search_sharp),
           ),
@@ -33,6 +26,7 @@ class ProductPage extends StatelessWidget {
         ],
       ),
       body: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
           CategoriesList(),
           ProductsList(),
