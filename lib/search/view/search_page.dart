@@ -11,10 +11,7 @@ class SearchPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.search),
-        ),
+        child: Icon(Icons.search, size: 200),
       ),
     );
   }

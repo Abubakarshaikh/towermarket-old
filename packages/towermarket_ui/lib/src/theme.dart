@@ -7,6 +7,7 @@ class TowermarketTheme {
     return ThemeData(
       scaffoldBackgroundColor: TowerMarketColors.white,
       appBarTheme: _appBarTheme,
+      navigationBarTheme: _navigationBarTheme,
     );
   }
 
@@ -18,6 +19,20 @@ class TowermarketTheme {
       ),
       backgroundColor: TowerMarketColors.white,
       titleTextStyle: TowerMarketTextStyle.headline5,
+    );
+  }
+
+  static NavigationBarThemeData get _navigationBarTheme {
+    return NavigationBarThemeData(
+      labelTextStyle: MaterialStateProperty.all(TowerMarketTextStyle.label),
+      indicatorColor: Colors.transparent,
+      backgroundColor: Colors.white,
+      iconTheme: MaterialStateProperty.all(
+        const IconThemeData(
+          size: 30.0,
+          color: TowerMarketColors.grey,
+        ),
+      ),
     );
   }
 }

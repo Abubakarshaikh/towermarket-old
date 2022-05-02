@@ -131,8 +131,9 @@ abstract class TowerMarketTextStyle {
   static TextStyle get label {
     return _baseTextStyle.copyWith(
       fontSize: 12,
-      // height: 1.27,
-      fontWeight: TowerMarketFontWeight.semiBold,
+      height: 1.27,
+      color: TowerMarketColors.grey,
+      fontWeight: TowerMarketFontWeight.bold,
     );
   }
 

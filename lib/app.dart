@@ -24,7 +24,7 @@ class App extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: TowermarketTheme.standard,
-        home: const HomePage(),
+        home: HomePage(),
       ),
     );
   }
