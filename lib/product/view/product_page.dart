@@ -28,7 +28,7 @@ class ProductPage extends StatelessWidget {
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
-          CategoriesList(),
+          SubCategoriesList(),
           ProductsList(),
         ],
       ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:towermarket/cart/bloc/cart_bloc.dart';
+import 'package:towermarket/category/bloc/category_bloc.dart';
 import 'package:towermarket/home/view/home_page.dart';
 import 'package:towermarket/product/product.dart';
 import 'package:towermarket_repository/towermarket_repository.dart';
@@ -11,15 +13,25 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: Brightness.dark,
+      ),
+    );
+
     return MultiBlocProvider(
       providers: [
         BlocProvider(
             create: (_) =>
-                ProductBloc(ProductRepository())..add(const ProductLoad())),
+                CategoryBloc(CategoryRepository())..add(const CategoryLoad())),
         BlocProvider(
             create: (_) =>
-                CategoryBloc(CategoryRepository())..add(const CategoryLoad())),
-        BlocProvider(create: (_) => CartBloc()..add(const CartLoad())),
+                ProductBloc(ProductRepository())..add(const ProductLoad())),
+        BlocProvider(
+            // create: (_) => SubCategoryBloc(SubCategoryRepository())
+              ..add(const SubCategoryLoad())),
+        // BlocProvider(create: (_) => CartBloc()..add(const CartLoad())),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

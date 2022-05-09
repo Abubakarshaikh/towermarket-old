@@ -5,7 +5,7 @@ class CategoryRepository {
       : _apiClient = apiClient ?? ApiClient();
 
   final ApiClient _apiClient;
-  Future<List<Category>> getAllProducts() async {
+  Future<List<Category>> getAllCategories() async {
     final fromApiClient = await _apiClient.getAll('categories.json');
     return fromApiClient.map((category) => Category.fromMap(category)).toList();
   }

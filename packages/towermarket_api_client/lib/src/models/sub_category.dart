@@ -2,25 +2,29 @@ import 'dart:convert';
 
 import 'package:equatable/equatable.dart';
 
-class Category extends Equatable {
+class SubCategory extends Equatable {
   final String id;
   final String title;
   final String image;
-  const Category({
+  final bool isSelected;
+  const SubCategory({
     required this.id,
     required this.title,
     required this.image,
+    this.isSelected = false,
   });
 
-  Category copyWith({
+  SubCategory copyWith({
     String? id,
     String? title,
     String? image,
+    bool? isSelected,
   }) {
-    return Category(
+    return SubCategory(
       id: id ?? this.id,
       title: title ?? this.title,
       image: image ?? this.image,
+      isSelected: isSelected ?? this.isSelected,
     );
   }
 
@@ -29,25 +33,29 @@ class Category extends Equatable {
       'id': id,
       'title': title,
       'image': image,
+      'isSelected': isSelected,
     };
   }
 
-  factory Category.fromMap(Map<String, dynamic> map) {
-    return Category(
+  factory SubCategory.fromMap(Map<String, dynamic> map) {
+    return SubCategory(
       id: map['id'] ?? '',
       title: map['title'] ?? '',
       image: map['image'] ?? '',
+      isSelected: map['isSelected'] ?? false,
     );
   }
 
   String toJson() => json.encode(toMap());
 
-  factory Category.fromJson(String source) =>
-      Category.fromMap(json.decode(source));
+  factory SubCategory.fromJson(String source) =>
+      SubCategory.fromMap(json.decode(source));
 
   @override
-  String toString() => 'Category(id: $id, title: $title, image: $image)';
+  String toString() {
+    return 'Category(id: $id, title: $title, image: $image, isSelected: $isSelected)';
+  }
 
   @override
-  List<Object> get props => [id, title, image];
+  List<Object> get props => [id, title, image, isSelected];
 }

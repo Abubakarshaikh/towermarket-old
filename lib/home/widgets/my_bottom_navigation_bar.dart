@@ -13,9 +13,9 @@ class MyBottomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
-      elevation: 12.0,
-      color: TowerMarketColors.white,
+      elevation: 10,
       child: NavigationBar(
+        height: 68,
         selectedIndex: currentIndex,
         onDestinationSelected: onDestinationSelected,
         destinations: const [

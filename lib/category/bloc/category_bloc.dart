@@ -9,29 +9,16 @@ class CategoryBloc extends Bloc<CategoryEvent, CategoryState> {
   final CategoryRepository _categoryRepository;
   CategoryBloc(this._categoryRepository) : super(const CategoryState()) {
     on<CategoryLoad>(_onCategoryLoad);
-    on<CategorySelect>(_onCategorySelect);
   }
 
   Future<void> _onCategoryLoad(
       CategoryLoad event, Emitter<CategoryState> emit) async {
     try {
-      final fromRepo = await _categoryRepository.getAllProducts();
-      emit(CategoryState(categories: fromRepo, status: CategoryStatus.success));
+      final categories = await _categoryRepository.getAllCategories();
+      emit(CategoryState(
+          categories: categories, status: CategoryStatus.success));
     } catch (e) {
       emit(const CategoryState(status: CategoryStatus.failure));
     }
-  }
-
-  void _onCategorySelect(CategorySelect event, Emitter<CategoryState> emit) {
-    final state = this.state;
-
-    final updatedState = state.categories.map((category) {
-      return category == event.category
-          ? event.category.copyWith(isSelected: true)
-          : category.copyWith(isSelected: false);
-    }).toList();
-
-    emit(CategoryState(
-        categories: updatedState, status: CategoryStatus.success));
   }
 }

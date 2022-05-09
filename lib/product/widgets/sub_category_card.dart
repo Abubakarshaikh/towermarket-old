@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:towermarket/product/bloc/category_bloc.dart';
+import 'package:towermarket/product/bloc/sub_category_bloc.dart';
 import 'package:towermarket/product/bloc/product_bloc.dart';
 import 'package:towermarket_api_client/towermarket_api_client.dart';
 import 'package:towermarket_ui/towermarket_ui.dart';
 
-class CategoryCard extends StatelessWidget {
-  final Category category;
+class SubCategoryCard extends StatelessWidget {
+  final SubCategory category;
 
-  const CategoryCard({Key? key, required this.category}) : super(key: key);
+  const SubCategoryCard({Key? key, required this.category}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +19,8 @@ class CategoryCard extends StatelessWidget {
         child: GestureDetector(
           onTap: () {
             context
-                .read<CategoryBloc>()
-                .add(CategorySelect(category: category));
+                .read<SubCategoryBloc>()
+                .add(SubCategorySelect(subCategory: category));
             context
                 .read<ProductBloc>()
                 .add(ProductLoad(categoryId: category.id));

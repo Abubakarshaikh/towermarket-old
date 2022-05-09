@@ -1,62 +1,112 @@
 [
     {
         "id": "1",
-        "title": "soft drinks",
-        "image": "images/categories/soft_drinks.png",
-        "isSelected": true
-    }, 
-    {
-        "id": "2",
-        "title": "fruit juices",
-        "image": "images/categories/fruit_juices.png",
-        "isSelected": false
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
     },
     {
-        "id": "3",
-        "title": "coldpress",
-        "image": "images/categories/coldpress.png",
-        "isSelected": false
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
     },
     {
-        "id": "4",
-        "title": "energy drinks",
-        "image": "images/categories/energy_drinks.png",
-        "isSelected": false
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
     },
     {
-        "id": "5",
-        "title": "Water & ice cubes",
-        "image": "images/categories/water_ice_cubes.png",
-        "isSelected": false
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
     },
     {
-        "id": "6",
-        "title": "soda & mixer",
-        "image": "images/categories/soda_mixer.png",
-        "isSelected": false
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
     },
     {
-        "id": "7",
-        "title": "syrups concentrates",
-        "image": "images/categories/syrups_concentrates.png",
-        "isSelected": false
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
     },
     {
-        "id": "8",
-        "title": "herbal drinks",
-        "image": "images/categories/herbal_drinks.png",
-        "isSelected": false
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
     },
     {
-        "id": "9",
-        "title": "milk drinks",
-        "image": "images/categories/milk_drinks.png",
-        "isSelected": false
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
     },
     {
-        "id": "10",
-        "title": "health drinks",
-        "image": "images/categories/health_drinks.png",
-        "isSelected": false
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
+    },
+    {
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
+    },
+    {
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
+    },
+    {
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
+    },
+    {
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
+    },
+    {
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
+    },
+    {
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
+    },
+    {
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
+    },
+    {
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
+    },
+    {
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
+    },
+    {
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
+    },
+    {
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
+    },
+    {
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
+    },
+    {
+        "id": "1",
+        "title": "Vagetales & Fruits",
+        "image": "images/categories/soft_drinks.png"
     }
 ]

@@ -26,3 +26,5 @@ flutter:
   assets:
     - packages/towermarket_repository/json/categories.json
     - packages/towermarket_repository/json/products.json
+    - packages/towermarket_repository/json/sub_categories.json
+    

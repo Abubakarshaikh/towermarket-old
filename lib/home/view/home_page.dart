@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:towermarket_ui/towermarket_ui.dart';
 
 import '../../account/view/account_page.dart';
 import '../../category/view/category_page.dart';
@@ -25,13 +26,18 @@ class HomePage extends StatelessWidget {
     return ValueListenableBuilder(
       valueListenable: _valueNotifier,
       builder: (context, int newValue, widgets) {
-        return Scaffold(
-          body: _screens[newValue],
-          appBar: AppBar(),
-          bottomNavigationBar: MyBottomNavigationBar(
-            onDestinationSelected: (newIndex) =>
-                _valueNotifier.value = newIndex,
-            currentIndex: newValue,
+        return Container(
+          color: TowerMarketColors.white,
+          child: SafeArea(
+            child: Scaffold(
+              body: _screens[newValue],
+              bottomNavigationBar: MyBottomNavigationBar(
+                onDestinationSelected: (newIndex) {
+                  _valueNotifier.value = newIndex;
+                },
+                currentIndex: newValue,
+              ),
+            ),
           ),
         );
       },
