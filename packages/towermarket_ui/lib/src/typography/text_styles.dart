@@ -7,6 +7,7 @@ abstract class TowerMarketTextStyle {
     return _baseTextStyle.copyWith(
       fontSize: 16,
       fontWeight: TowerMarketFontWeight.regular,
+      height: 1.50,
     );
   }
 
@@ -104,29 +105,29 @@ abstract class TowerMarketTextStyle {
     );
   }
 
-  // static TextStyle get body {
-  //   return _bodyTextStyle.copyWith(
-  //     fontSize: 24,
-  //     height: 1.33,
-  //     fontWeight: TowerMarketFontWeight.regular,
-  //   );
-  // }
+  static TextStyle get body {
+    return _baseTextStyle.copyWith(
+      fontSize: 24,
+      height: 1.33,
+      fontWeight: TowerMarketFontWeight.regular,
+    );
+  }
 
-  // static TextStyle get bodySmall {
-  //   return _bodyTextStyle.copyWith(
-  //     fontSize: 18,
-  //     height: 1.22,
-  //     fontWeight: TowerMarketFontWeight.regular,
-  //   );
-  // }
+  static TextStyle get bodySmall {
+    return _baseTextStyle.copyWith(
+      fontSize: 18,
+      height: 1.22,
+      fontWeight: TowerMarketFontWeight.regular,
+    );
+  }
 
-  // static TextStyle get bodyXSmall {
-  //   return _bodyTextStyle.copyWith(
-  //     fontSize: 14,
-  //     height: 1.27,
-  //     fontWeight: TowerMarketFontWeight.regular,
-  //   );
-  // }
+  static TextStyle get bodyXSmall {
+    return _baseTextStyle.copyWith(
+      fontSize: 14,
+      height: 1.27,
+      fontWeight: TowerMarketFontWeight.regular,
+    );
+  }
 
   static TextStyle get label {
     return _baseTextStyle.copyWith(

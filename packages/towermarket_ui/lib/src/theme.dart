@@ -8,6 +8,7 @@ class TowermarketTheme {
       scaffoldBackgroundColor: TowerMarketColors.white,
       appBarTheme: _appBarTheme,
       navigationBarTheme: _navigationBarTheme,
+      elevatedButtonTheme: _elevatedButtonThemeData,
     );
   }
 
@@ -33,6 +34,12 @@ class TowermarketTheme {
           color: TowerMarketColors.grey,
         ),
       ),
+    );
+  }
+
+  static ElevatedButtonThemeData get _elevatedButtonThemeData {
+    return ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(primary: TowerMarketColors.firebrick),
     );
   }
 }
