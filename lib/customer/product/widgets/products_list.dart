@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:towermarket/product/product.dart';
+import 'package:towermarket/customer/product/product.dart';
 import 'package:towermarket_ui/towermarket_ui.dart';
 
 import '../../filter/filter.dart';

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import 'package:towermarket_ui/towermarket_ui.dart';
 
 class MyBottomNavigationBar extends StatelessWidget {
@@ -18,7 +19,7 @@ class MyBottomNavigationBar extends StatelessWidget {
         height: 68,
         selectedIndex: currentIndex,
         onDestinationSelected: onDestinationSelected,
-        destinations: const [
+        destinations: [
           NavigationDestination(
             icon: Icon(Icons.home_rounded),
             label: 'home',
@@ -42,11 +43,54 @@ class MyBottomNavigationBar extends StatelessWidget {
                   color: TowerMarketColors.black),
               label: 'offers'),
           NavigationDestination(
-              icon: Icon(Icons.person_outline_rounded),
+              icon: MyBottomNavigationBarIcon(
+                  animatedIconData: AnimatedIcons.home_menu),
               selectedIcon: Icon(Icons.person_outline_rounded,
                   color: TowerMarketColors.black),
               label: 'account'),
         ],
+      ),
+    );
+  }
+}
+
+class MyBottomNavigationBarIcon extends StatefulWidget {
+  final AnimatedIconData animatedIconData;
+  const MyBottomNavigationBarIcon({
+    Key? key,
+    required this.animatedIconData,
+  }) : super(key: key);
+  @override
+  _MyBottomNavigationBarIconState createState() =>
+      _MyBottomNavigationBarIconState();
+}
+
+class _MyBottomNavigationBarIconState extends State<MyBottomNavigationBarIcon>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _animationController;
+
+  @override
+  void initState() {
+    _animationController =
+        AnimationController(vsync: this, duration: const Duration(seconds: 1));
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        _animationController.forward();
+      },
+      child: AnimatedIcon(
+        icon: widget.animatedIconData,
+        progress: _animationController,
       ),
     );
   }

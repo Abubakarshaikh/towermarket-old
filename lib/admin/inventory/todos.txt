@@ -1,0 +1,6 @@
+Step #1: Inventory Update
+1. Category e.g Confectionery
+2. ..Sub Category e.g cakes, choclates, biscuits
+3. ..products e.g cupcakes
+4. ..update products.
+5. ..inventory update.

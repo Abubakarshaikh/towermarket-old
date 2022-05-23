@@ -31,11 +31,13 @@ class SubCategoriesList extends StatelessWidget {
                   ],
                 ),
                 child: ListView.builder(
-                  physics: const BouncingScrollPhysics(),
+                  physics: const BouncingScrollPhysics(
+                      parent: AlwaysScrollableScrollPhysics()),
                   padding: const EdgeInsets.symmetric(vertical: 12),
                   itemCount: state.subCategories.length,
                   itemBuilder: (context, index) {
-                    return SubCategoryCard(category: state.subCategories[index]);
+                    return SubCategoryCard(
+                        category: state.subCategories[index]);
                   },
                 ),
               ),

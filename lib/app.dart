@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:towermarket/category/bloc/category_bloc.dart';
-import 'package:towermarket/home/view/home_page.dart';
-import 'package:towermarket/product/product.dart';
+import 'package:towermarket/customer/category/bloc/category_bloc.dart';
+import 'package:towermarket/customer/product/product.dart';
 import 'package:towermarket_repository/towermarket_repository.dart';
 import 'package:towermarket_ui/towermarket_ui.dart';
-
-import 'cart/bloc/cart_bloc.dart';
+import 'admin/inventory/inventory.dart';
+import 'customer/cart/bloc/cart_bloc.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -37,7 +36,7 @@ class App extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: TowermarketTheme.standard,
-        home: HomePage(),
+        home: const InventoryPage(),
       ),
     );
   }

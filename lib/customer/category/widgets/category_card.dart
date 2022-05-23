@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:towermarket/product/product.dart';
+import 'package:towermarket/customer/product/product.dart';
 import 'package:towermarket_api_client/towermarket_api_client.dart';
 import 'package:towermarket_ui/towermarket_ui.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:towermarket/search/view/search_page.dart';
+import 'package:towermarket/customer/search/view/search_page.dart';
 import 'package:towermarket_ui/towermarket_ui.dart';
 
 import '../../product/product.dart';

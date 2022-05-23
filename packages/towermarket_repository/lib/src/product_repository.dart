@@ -5,7 +5,7 @@ class ProductRepository {
       : _apiClient = apiClient ?? ApiClient();
 
   final ApiClient _apiClient;
-  Future<List<Product>> getAllProductsByCategoryId(String id) async {
+  Future<List<Product>> getAllProductsByCategoryId([String id = "1"]) async {
     final fromApiClient = await _apiClient.getAll('products.json');
     return fromApiClient
         .map((product) => Product.fromMap(product))

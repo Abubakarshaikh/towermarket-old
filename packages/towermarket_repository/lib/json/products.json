@@ -6,6 +6,7 @@
         "unit": "ml",
         "volume": 600,
         "price": 31,
+        "quantity": 1,
         "image": "images/products/bisleri_limonata.png"
     },
     {
@@ -15,6 +16,7 @@
         "unit": "ml",
         "volume": 600,
         "price": 32,
+        "quantity": 1,
         "image": "images/products/bisleri_limonata.png"
     },
     {
@@ -24,6 +26,7 @@
         "unit": "ml",
         "volume": 600,
         "price": 34,
+        "quantity": 1,
         "image": "images/products/bisleri_limonata.png"
     },
     {
@@ -33,6 +36,7 @@
         "unit": "ml",
         "volume": 600,
         "price": 31,
+        "quantity": 1,
         "image": "images/products/real_fruit.png"
     },
     {
@@ -42,6 +46,7 @@
         "unit": "ml",
         "volume": 600,
         "price": 32,
+        "quantity": 1,
         "image": "images/products/real_fruit.png"
     },
     {
@@ -51,6 +56,7 @@
         "unit": "ml",
         "volume": 600,
         "price": 34,
+        "quantity": 1,
         "image": "images/products/real_fruit.png"
     },
     {
@@ -60,6 +66,7 @@
         "unit": "ml",
         "volume": 600,
         "price": 34,
+        "quantity": 1,
         "image": "images/products/real_fruit.png"
     },
     {
@@ -69,6 +76,7 @@
         "unit": "ml",
         "volume": 600,
         "price": 34,
+        "quantity": 1,
         "image": "images/products/real_fruit.png"
     },
     {
@@ -78,6 +86,7 @@
         "unit": "ml",
         "volume": 600,
         "price": 34,
+        "quantity": 1,
         "image": "images/products/real_fruit.png"
     },
     {
@@ -87,6 +96,7 @@
         "unit": "ml",
         "volume": 600,
         "price": 34,
+        "quantity": 1,
         "image": "images/products/real_fruit.png"
     },
     {
@@ -96,7 +106,7 @@
         "unit": "ml",
         "volume": 600,
         "price": 34,
+        "quantity": 1,
         "image": "images/products/real_fruit.png"
     }
-
 ]
