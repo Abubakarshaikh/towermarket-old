@@ -9,6 +9,7 @@ class TowermarketTheme {
       appBarTheme: _appBarTheme,
       navigationBarTheme: _navigationBarTheme,
       elevatedButtonTheme: _elevatedButtonThemeData,
+      floatingActionButtonTheme: _floatingActionButtonThemeData,
     );
   }
 
@@ -40,6 +41,12 @@ class TowermarketTheme {
   static ElevatedButtonThemeData get _elevatedButtonThemeData {
     return ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(primary: TowerMarketColors.firebrick),
+    );
+  }
+
+  static FloatingActionButtonThemeData get _floatingActionButtonThemeData {
+    return const FloatingActionButtonThemeData(
+      backgroundColor: TowerMarketColors.firebrick,
     );
   }
 }
